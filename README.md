@@ -165,7 +165,7 @@ Configure the endpoint:
 * Select `HTTPS` as the Service Endpoint Type.
 * For the Default Region enter the **HTTPS** service endpoint which is the URL of your IBM Cloud Functions **Web Action** from step 4.
 * Use the pull-down to select `My development endpoint is a sub-domain of a domain that has a wildcard certificate from a certificate authority`.
-* Click the `Save Endpoints` button!
+* Click the `Save Endpoints` button and **BUILD THE MODEL**!
 
 ![](images/service_endpoint_type.png)
 
