@@ -1,4 +1,4 @@
-# Create an Alexa skill using Watson Assistant and OpenWhisk
+# Create an Alexa skill using Watson Assistant and Serverless
 
 In this Code Pattern, we will create an Alexa skill using [Watson Assistant](https://www.ibm.com/watson/developercloud/conversation.html) via the IBM Cloud Functions serverless framework.
 
