@@ -39,7 +39,7 @@ Import the watson_assistant_workspace.json:
 * Click on the service and then click on `Launch Tool`.
 * Go to the `Workspaces` tab.
 * Click on the **import** icon (next to the Workspaces Create button).
-* Click `Choose a file`, go to your cloned repo dir, and `Open` the watson_assistant_workspace.json file in [`data/conversation/workspaces/workspace.json`](data/conversation/workspaces/workspace.json).
+* Click `Choose a file`, go to your cloned repo dir, and `Open` the watson_assistant_workspace.json file in [`data/watson_assistant_workspace.json`](data/watson_assistant_workspace.json).
 * Select `Everything` and click `Import`.
 
 ### 3. Configure credentials
@@ -181,9 +181,7 @@ You probably shouldn't publish this example, but you are now ready to create and
 
 ### Sample Output
 
-
-
-
+![](images/output.png)
 
 # Learn more
 
@@ -191,4 +189,4 @@ You probably shouldn't publish this example, but you are now ready to create and
 * **AI and Data Code Pattern Playlist**: Bookmark our [playlist](https://www.youtube.com/playlist?list=PLzUbsvIyrNfknNewObx5N7uGZ5FKH0Fde) with all of our Code Pattern videos
 * **With Watson**: Want to take your Watson app to the next level? Looking to utilize Watson Brand assets? [Join the With Watson program](https://www.ibm.com/watson/with-watson/) to leverage exclusive brand, marketing, and tech resources to amplify and accelerate your Watson embedded commercial solution.
 
-** This is a fork of https://github.com/IBM/alexa-skill-watson-conversation  (You can leverage this code pattern if you are interested in Building Alexa skill with Redis database and Weather Channel data) **
+** This is a fork of [https://github.com/IBM/alexa-skill-watson-conversation](https://github.com/IBM/alexa-skill-watson-conversation) with certain updates (You can leverage this code pattern if you are interested in Building Alexa skill with Redis database and Weather Channel data) **
