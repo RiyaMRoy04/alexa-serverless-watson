@@ -19,7 +19,7 @@ IBM Cloud Functions (based on Apache OpenWhisk) will be used to integrate Alexa 
 
 ### 1. Clone the repo
 
-Clone the `alexa-skill-watson-conversation` repo locally and `cd` to the local repo
+Clone the `alexa-serverless-watson` repo locally and `cd` to the local repo
 (for commands in later steps). In a terminal, run:
 
 ```
@@ -62,7 +62,7 @@ Edit the `.params` file and add the required settings.
 {
   "CONVERSATION_USERNAME": "<add_assistant_username>",
   "CONVERSATION_PASSWORD": "<add_assistant_password>",
-  "WORKSPACE_ID": "<add_assistant_workspace_id>",
+  "WORKSPACE_ID": "<add_assistant_workspace_id>"
 }
 ```
 ### 4. Create the IBM Cloud Functions action
@@ -97,13 +97,13 @@ to create a raw HTTP web action in OpenWhisk.
 npm install
 rm action.zip
 zip -r action.zip main.js package* node_modules
-bx wsk action update alexa-watson action.zip --kind nodejs:6 --web raw --param-file .params
+bx wsk action update alexa-watson-new action.zip --kind nodejs:6 --web raw --param-file .params
 ```
 
 #### Determine your IBM Cloud endpoint:
 
 To find this URL, navigate to [IBM Cloud Functions - Actions](https://console.bluemix.net/openwhisk/manage/actions), click on your
-`alexa-watson` action and use the sidebar to navigate to `Endpoints`.  The Web Action URL ends with `.json`.
+`alexa-watson-new` action and use the sidebar to navigate to `Endpoints`.  The Web Action URL ends with `.json`.
 
 ![](images/functions_endpoints.png)
 
@@ -189,4 +189,4 @@ You probably shouldn't publish this example, but you are now ready to create and
 * **AI and Data Code Pattern Playlist**: Bookmark our [playlist](https://www.youtube.com/playlist?list=PLzUbsvIyrNfknNewObx5N7uGZ5FKH0Fde) with all of our Code Pattern videos
 * **With Watson**: Want to take your Watson app to the next level? Looking to utilize Watson Brand assets? [Join the With Watson program](https://www.ibm.com/watson/with-watson/) to leverage exclusive brand, marketing, and tech resources to amplify and accelerate your Watson embedded commercial solution.
 
-** This is a fork of [https://github.com/IBM/alexa-skill-watson-conversation](https://github.com/IBM/alexa-skill-watson-conversation) with certain updates (You can leverage this code pattern if you are interested in Building Alexa skill with Redis database and Weather Channel data) **
+** This repository is a fork of [https://github.com/IBM/alexa-skill-watson-conversation](https://github.com/IBM/alexa-skill-watson-conversation) with certain updates (You can leverage this code pattern if you are interested in Building Alexa skill with Redis database and Weather Channel data) **
