@@ -6,6 +6,10 @@ Alexa is the voice service behind products like the Amazon Echo.
 
 IBM Cloud Functions (based on Apache OpenWhisk) will be used to integrate Alexa with Watson Assistant.
 
+#Pre-requisites
+
+[IBM Cloud CLI](https://console.bluemix.net/docs/cli/reference/bluemix_cli/download_cli.html#install_use)
+
 # Steps
 
 ## Run locally
