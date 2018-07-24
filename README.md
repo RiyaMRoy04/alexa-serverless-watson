@@ -9,7 +9,9 @@ IBM Cloud Functions (based on Apache OpenWhisk) will be used to integrate Alexa 
 # Pre-requisites
 
 [IBM Cloud Account](https://ibm.biz/BdYEQU)
+
 [IBM Cloud CLI](https://console.bluemix.net/docs/cli/reference/bluemix_cli/download_cli.html#install_use)
+
 [Amazon Developer Console](https://developer.amazon.com/)
 
 # Steps
