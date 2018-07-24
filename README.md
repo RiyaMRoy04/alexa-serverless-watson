@@ -105,7 +105,7 @@ bx wsk action update alexa-watson action.zip --kind nodejs:6 --web raw --param-f
 To find this URL, navigate to [IBM Cloud Functions - Actions](https://console.bluemix.net/openwhisk/manage/actions), click on your
 `alexa-watson` action and use the sidebar to navigate to `Endpoints`.  The Web Action URL ends with `.json`.
 
-![](https://github.com/IBM/alexa-skill-watson-conversation/tree/master/doc/source/images/functions_endpoints.png)
+![](images/functions_endpoints.png)
 
 ### 5. Create an Alexa skill
 
@@ -113,51 +113,51 @@ Sign up for an Amazon Developer Portal account [here](http://developer.amazon.co
 
 Go to https://developer.amazon.com/alexa/console/ask and click the `Create Skill` button.
 
-![](https://github.com/IBM/alexa-skill-watson-conversation/tree/master/doc/source/images/create_alexa_skill.png)
+![](images/create_alexa_skill.png)
 
 Provide a name and hit `Next`.
 
 Use the `Select` button to create a **Custom** skill and hit the `Create Skill` button.
 
-![](https://github.com/IBM/alexa-skill-watson-conversation/tree/master/doc/source/images/select_custom_skill.png)
+![](images/select_custom_skill.png)
 
 Provide an invocation name:
 
-![](https://github.com/IBM/alexa-skill-watson-conversation/tree/master/doc/source/images/invocation_name.png)
+![](images/invocation_name.png)
 
 Add a custom slot type:
 
 * In the left sidebar menu, click on `Slot Types (#)` and hit `+ Add`.
 
-![](https://github.com/IBM/alexa-skill-watson-conversation/tree/master/doc/source/images/slot_types.png)
+![](images/slot_types.png)
 
 * Use the name `BAG_OF_WORDS` and hit the `Create custom slot type` button.
 
-![](https://github.com/IBM/alexa-skill-watson-conversation/tree/master/doc/source/images/create_slot_type.png)
+![](images/create_slot_type.png)
 
 * Now `BAG_OF_WORDS` needs a slot value. Just enter `Hello World` and hit the plus sign so that it has a slot value.
 
-![](https://github.com/IBM/alexa-skill-watson-conversation/tree/master/doc/source/images/bag_of_words.png)
+![](images/bag_of_words.png)
 
 Add a custom intent type:
 
 * In the left sidebar menu, click on `Intents (#)` and hit `+ Add`.
 
-![](https://github.com/IBM/alexa-skill-watson-conversation/tree/master/doc/source/images/intents.png)
+![](images/intents.png)
 
 * Use the name `EveryThingIntent` and hit the `Create custom intent` button.
 * Add `{EveryThingSlot}` under Sample Utterances. Use the plus sign to create the `EveryThingSlot`.
 
-![](https://github.com/IBM/alexa-skill-watson-conversation/tree/master/doc/source/images/sample_utterance.png)
+![](images/sample_utterance.png)
 
 * Scroll down to `Intent Slots (#)`
 * Use the `Select a slot type` pulldown to give `EveryThingSlot` the slot type `BAG_OF_WORDS`.
 
-![](https://github.com/IBM/alexa-skill-watson-conversation/tree/master/doc/source/images/create_everything_intent.png)
+![](images/create_everything_intent.png)
 
 Click on `Save Model` and then `Build Model`.
 
-![](doc/source/images/save_and_build.png)
+![](images/save_and_build.png)
 
 Configure the endpoint:
 
@@ -167,7 +167,7 @@ Configure the endpoint:
 * Use the pull-down to select `My development endpoint is a sub-domain of a domain that has a wildcard certificate from a certificate authority`.
 * Click the `Save Endpoints` button!
 
-![](https://github.com/IBM/alexa-skill-watson-conversation/tree/master/doc/source/images/service_endpoint_type.png)
+![](images/service_endpoint_type.png)
 
 ### 6. Talk to it
 
